@@ -1,7 +1,7 @@
 package task01;
 
-public class Pet  {
+public class Pet {
     public String getName() {
-        return "Я - Кот";
+        return "Я - пушистик";
     }
 }
