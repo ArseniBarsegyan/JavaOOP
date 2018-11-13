@@ -13,15 +13,51 @@ https://ru.stackoverflow.com/questions/136909/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%
 5. Добавь интерфейсы классам Cat(кот), Dog(собака), Tiger(тигр), Duck(Утка).
 */
 public class Solution {
-    public class Cat {
+
+    public interface Fly{
+void fly();
     }
 
-    public class Dog {
+    public interface Climb{
+void climb();
+
     }
 
-    public class Tiger extends Cat {
+    public interface Run{
+void run();
+    }
+    public class Cat implements Climb, Run{
+        public void climb() {
+        }
+        public void run() {
+
+        }
+
     }
 
-    public class Duck {
+    public class Dog  implements Run{
+        public void run() {
+
+        }
+    }
+
+    public class Tiger extends Cat implements Climb,Run{
+        public void climb() {
+
+        }
+        public void run() {
+
+        }
+            }
+
+    public class Duck implements Fly,Run{
+
+        public void fly(){
+
+        }
+        public void run() {
+
+        }
+
     }
 }
