@@ -21,12 +21,35 @@ public class Solution {
         void swim();
     }
 
-    public class Duck {
+    public class Duck implements Fly,Swim,Run{
+
+        public void fly() {
+
+        }
+        public void swim(){
+
+        }
+        public void run(){
+
+        }
+
     }
 
-    public class Penguin {
+    public class Penguin implements Swim,Run{
+
+        public void swim(){
+
+        }
+        public void run(){
+
+        }
+
     }
 
-    public class Toad {
+    public class Toad implements Swim{
+        public void swim(){
+
+        }
     }
-}
+
+    }
