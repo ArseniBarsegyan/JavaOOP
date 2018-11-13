@@ -24,7 +24,5 @@ public class Solution {
         Dog dog2 = new Dog();
         System.out.println(dog1);
         System.out.println(dog2);
-
-
     }
 }

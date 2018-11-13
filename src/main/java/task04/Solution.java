@@ -8,8 +8,7 @@ package task04;
 */
 
 public class Solution {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println(getObjectType(new Cat()));
         System.out.println(getObjectType(new Tiger()));
         System.out.println(getObjectType(new Lion()));
@@ -19,65 +18,40 @@ public class Solution {
     }
 
     //TODO - implement your solution
-    public static String getObjectType(Object o)
-
-    {
-
-
-        if(o instanceof Tiger)
-        {
+    public static String getObjectType(Object o) {
+        if (o instanceof Tiger) {
             return "Тигр";
-        }
-
-        else if  (o instanceof Lion)
-        {
+        } else if (o instanceof Lion) {
             return "Лев";
-        }
-
-        else if  (o instanceof Cat)
-        {
+        } else if (o instanceof Cat) {
             return "Кот";
-        }
-
-        else if  (o instanceof Bull)
-        {
+        } else if (o instanceof Bull) {
             return "Бык";
-        }
-        else if (o instanceof Cow) {
+        } else if (o instanceof Cow) {
             return "Корова";
-        }
-        else if (o instanceof Animal) {
+        } else if (o instanceof Animal) {
             return "Животное";
-        }
-        else {
+        } else {
             return "хз";
         }
-
     }
 
 
-
-    public static class Cat  extends Animal   //<--Классы наследуются!!
-    {
+    public static class Cat extends Animal {
     }
 
-    public static class Tiger  extends Cat
-    {
+    public static class Tiger extends Cat {
     }
 
-    public static class Lion  extends Cat
-    {
+    public static class Lion extends Cat {
     }
 
-    public static class Bull  extends Animal
-    {
+    public static class Bull extends Animal {
     }
 
-    public static class Cow  extends Animal
-    {
+    public static class Cow extends Animal {
     }
 
-    public static class Animal
-    {
+    public static class Animal {
     }
 }

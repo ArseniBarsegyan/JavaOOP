@@ -6,50 +6,43 @@ package task06;
 */
 public class Solution {
 
-    public interface Fly
-    {
+    public interface Fly {
         void fly();
     }
 
-    public interface Run
-    {
+    public interface Flyable {
+        void fly();
+    }
+
+    public interface Run {
         void run();
     }
 
-    public interface Swim
-    {
+    public interface Swim {
         void swim();
     }
 
-    public class Duck implements Fly,Swim,Run{
-
+    public class Duck implements Fly, Swim, Run {
         public void fly() {
-
-        }
-        public void swim(){
-
-        }
-        public void run(){
-
         }
 
-    }
-
-    public class Penguin implements Swim,Run{
-
-        public void swim(){
-
-        }
-        public void run(){
-
+        public void swim() {
         }
 
-    }
-
-    public class Toad implements Swim{
-        public void swim(){
-
+        public void run() {
         }
     }
 
+    public class Penguin implements Swim, Run {
+        public void swim() {
+        }
+
+        public void run() {
+        }
     }
+
+    public class Toad implements Swim {
+        public void swim() {
+        }
+    }
+}

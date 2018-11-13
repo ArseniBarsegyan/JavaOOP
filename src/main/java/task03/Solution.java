@@ -17,50 +17,34 @@ public class Solution {
         System.out.println(getObjectType(new Pig()));
     }
 
-    public static String getObjectType(Object o)
-    {
+    public static String getObjectType(Object o) {
         //Допиши тут свой код
 
-        if(o instanceof Cat)
-        {
+        if (o instanceof Cat) {
             return "Кот";
-        }
-
-        else if  (o instanceof Tiger)
-        {
+        } else if (o instanceof Tiger) {
             return "Тигр";
-        }
-
-        else if  (o instanceof Lion)
-        {
+        } else if (o instanceof Lion) {
             return "Лев";
-        }
-
-        else if  (o instanceof Bull)
-        {
+        } else if (o instanceof Bull) {
             return "Бык";
-        }
-            else
+        } else {
             return "хз";
+        }
     }
 
-    public static class Cat
-    {
+    public static class Cat {
     }
 
-    public static class Tiger
-    {
+    public static class Tiger {
     }
 
-    public static class Lion
-    {
+    public static class Lion {
     }
 
-    public static class Bull
-    {
+    public static class Bull {
     }
 
-    public static class Pig
-    {
+    public static class Pig {
     }
 }

@@ -14,50 +14,44 @@ https://ru.stackoverflow.com/questions/136909/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%
 */
 public class Solution {
 
-    public interface Fly{
-void fly();
+    public interface Fly {
+        void fly();
     }
 
-    public interface Climb{
-void climb();
-
+    public interface Climb {
+        void climb();
     }
 
-    public interface Run{
-void run();
+    public interface Run {
+        void run();
     }
-    public class Cat implements Climb, Run{
+
+    public class Cat implements Climb, Run {
         public void climb() {
         }
+
         public void run() {
-
-        }
-
-    }
-
-    public class Dog  implements Run{
-        public void run() {
-
         }
     }
 
-    public class Tiger extends Cat implements Climb,Run{
+    public class Dog implements Run {
+        public void run() {
+        }
+    }
+
+    public class Tiger extends Cat implements Climb, Run {
         public void climb() {
-
         }
+
         public void run() {
-
         }
-            }
+    }
 
-    public class Duck implements Fly,Run{
-
-        public void fly(){
-
+    public class Duck implements Fly, Run {
+        public void fly() {
         }
+
         public void run() {
-
         }
-
     }
 }
