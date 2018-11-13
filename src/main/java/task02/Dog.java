@@ -1,8 +1,10 @@
 package task02;
 
-public class Duck extends Animal{
+public class Dog extends Animal{
+
     @Override
     public String toString() {
-        return "Duck";
+        return "Dog";
     }
+
 }

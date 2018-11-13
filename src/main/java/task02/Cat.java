@@ -1,8 +1,8 @@
 package task02;
 
-public class Duck extends Animal{
+public class Cat extends Animal{
     @Override
     public String toString() {
-        return "Duck";
+        return "Cat";
     }
 }

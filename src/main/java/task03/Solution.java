@@ -20,11 +20,28 @@ public class Solution {
     public static String getObjectType(Object o)
     {
         //Допиши тут свой код
+
         if(o instanceof Cat)
         {
             return "Кот";
         }
-        else return "";
+
+        else if  (o instanceof Tiger)
+        {
+            return "Тигр";
+        }
+
+        else if  (o instanceof Lion)
+        {
+            return "Лев";
+        }
+
+        else if  (o instanceof Bull)
+        {
+            return "Бык";
+        }
+            else
+            return "хз";
     }
 
     public static class Cat
