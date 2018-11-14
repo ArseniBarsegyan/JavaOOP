@@ -16,6 +16,11 @@ package task07;
 6) На экране должны вывестить надписи типа "Утка летает" и "Самолет летит"
 */
 public class Solution {
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
+
+    Flyble duck = new Duck();
+    System.out.println(duck.fly());
+    Flyble plane = new Plain();
+    System.out.println(plane.fly());
     }
 }
