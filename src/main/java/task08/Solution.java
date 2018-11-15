@@ -1,5 +1,7 @@
 package task08;
 
+import java.util.ArrayList;
+
 /* Полиморфизм в действии
 1) Создай в пакете интерфейс Shape(фигура) с методом getSquare()
 2) Создай в пакете классы Triangle(треугольник), Rectangle(прямоугольник)
@@ -19,7 +21,17 @@ package task08;
 На экран должно вывестись "площадь треугольника","площадь прямоугольника"
 */
 public class Solution {
+    public static void main(String[] args) {
 
+        Shape triangle = new Triangle();
+        Shape rectangle = new Rectangle();
 
+        ArrayList<Shape> shapes = new ArrayList<Shape>();
+        shapes.add(triangle);
+        shapes.add(rectangle);
+
+        for (Shape i : shapes) {
+            i.getSquare();
+        }
+    }
 }
-
