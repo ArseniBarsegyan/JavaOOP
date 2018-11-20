@@ -1,4 +1,9 @@
 apply plugin: 'java'
+
+compileJava {
+     sourceCompatibility = '1.8'
+}
+
 apply plugin: 'maven'
 
 group = 'java_oop'
