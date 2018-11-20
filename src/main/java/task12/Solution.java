@@ -1,22 +1,20 @@
 package task12;
 
 /*
- Основы StreamAPI.
- Перед заданием почитай эту главу https://metanit.com/java/tutorial/10.1.php
- - Разберись, что делает программа.
- - Измени программу так, чтобы на экран выводились только положительные числа.
- (Подсказка: все очень просто).
+ Вспомни, что такое факториал.
+ Перепиши функцию, вычисляющую факториал, чтобы она корректно вычисляла факториал.
+ Подсказка: данные задачи являются типовыми. Чаще всего их можно нагуглить за 2-3 минуты,
+ написал в google "java factorial example" и т.п.
+ Наиболее распространенный источник ответов - StackOverflow.
+ По мере роста твоих навыков ты будешь находить ответы гораздо быстрее.
+ Главное - правильно составить запрос.
  */
-
-import java.util.stream.IntStream;
-
 public class Solution {
     public static void main(String[] args) {
-        int[] numbers = {-5, 2, 4, 5, -10, 10, 0, 24};
+        System.out.println(factorial(4)); // Should be 24
+    }
 
-        int[] positiveNumbers = IntStream.of(numbers).filter(n -> n < 0).toArray();
-        for (int i : positiveNumbers) {
-            System.out.println(i);
-        }
+    private static long factorial(int number) {
+        return 1;
     }
 }
