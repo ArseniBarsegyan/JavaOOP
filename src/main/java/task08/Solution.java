@@ -33,5 +33,5 @@ public class Solution {
         for (Shape i : shapes) {
             i.getSquare();
         }
-    }
+
 }

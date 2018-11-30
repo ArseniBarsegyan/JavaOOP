@@ -1,5 +1,7 @@
 package task09;
 
+import java.util.ArrayList;
+
 /*
  Зоопарк
 
@@ -45,4 +47,45 @@ package task09;
 
  */
 public class Solution {
+
+
+    public static void main(String[] args) {
+
+        Animal crocodile = new Crocodile();
+        Animal elephant = new Elephant();
+        Animal panda = new Panda();
+        Animal spider = new Spider();
+
+
+        class Zoo {
+
+
+            public ArrayList<Animal> animals = new ArrayList<Animal>();
+
+            void addAnimal(Animal animal) {
+                animals.add(animal);
+            }
+
+            void releaseAllAnimals() {
+                animals.clear();
+                System.out.println("Животные устроили хаос!");
+            }
+
+            addAnimal(crocodile);
+
+            addAnimal(elephant);
+
+            addAnimal(Panda);
+
+            addAnimal(spider);
+
+            releaseAllAnimals();
+        }
+
+
+    }
+
+}
+
+
 }
