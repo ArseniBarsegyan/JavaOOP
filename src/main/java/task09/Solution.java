@@ -46,9 +46,8 @@ import java.util.ArrayList;
 - Освободи всех животных
 
  */
+
 public class Solution {
-
-
     public static void main(String[] args) {
 
         Animal crocodile = new Crocodile();
@@ -56,36 +55,15 @@ public class Solution {
         Animal panda = new Panda();
         Animal spider = new Spider();
 
+        Zoo zoo = new Zoo();
 
-        class Zoo {
+        zoo.addAnimal(crocodile);
+        zoo.addAnimal(elephant);
+        zoo.addAnimal(panda);
+        zoo.addAnimal(spider);
 
-
-            public ArrayList<Animal> animals = new ArrayList<Animal>();
-
-            void addAnimal(Animal animal) {
-                animals.add(animal);
-            }
-
-            void releaseAllAnimals() {
-                animals.clear();
-                System.out.println("Животные устроили хаос!");
-            }
-
-            addAnimal(crocodile);
-
-            addAnimal(elephant);
-
-            addAnimal(Panda);
-
-            addAnimal(spider);
-
-            releaseAllAnimals();
-        }
+        zoo.releaseAllAnimals();
 
 
     }
-
-}
-
-
 }

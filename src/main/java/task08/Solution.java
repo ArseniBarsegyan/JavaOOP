@@ -34,4 +34,5 @@ public class Solution {
             i.getSquare();
         }
 
+    }
 }
