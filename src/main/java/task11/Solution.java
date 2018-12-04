@@ -1,22 +1,31 @@
 package task11;
 
 /*
- Основы StreamAPI.
- Перед заданием почитай эту главу https://metanit.com/java/tutorial/10.1.php
- - Разберись, что делает программа.
- - Измени программу так, чтобы на экран выводились только положительные числа.
- (Подсказка: все очень просто).
+ Конструкторы.
+ Можешь прочитать все, а можешь только начало страницы.
+ http://developer.alexanderklimov.ru/android/java/constructor.php
+
+  Конструктор по умолчанию
+  - Создай в пакете класс Demo, в нем создай конструктор public Demo() {}
+  - В классе Solution создай новый объект класса Demo.
+
+  - Создай в пакете класс Panda, в нем создай конструктор public Panda() {}
+  - В конструкторе выведи на экран сообщение "Панда построена"
+  - В классе Solution создай новый объект класса Panda.
+
+  - Создай в пакете класс Spaceship, в нем создай конструктор public Spaceship() {}
+  - В конструкторе выведи на экран сообщение "Космический корабль построен"
+  - В классе Solution создай новый объект класса Spaceship.
+
+  - Создай в пакете класс StarDestroyer, в нем создай конструктор public StarDestroyer() {}
+  - В конструкторе выведи на экран сообщение "Уничтожитель миров построен"
+  - В классе Solution создай новый объект класса StarDestroyer.
+
+  - Запусти класс Solution.
+  - На экран должно вывести
+  "Уничтожитель миров"
  */
-
-import java.util.stream.IntStream;
-
 public class Solution {
     public static void main(String[] args) {
-        int[] numbers = {-5, 2, 4, 5, -10, 10, 0, 24};
-
-        int[] positiveNumbers = IntStream.of(numbers).filter(n -> n < 0).toArray();
-        for (int i : positiveNumbers) {
-            System.out.println(i);
-        }
     }
 }

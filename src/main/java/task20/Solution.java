@@ -1,4 +1,4 @@
-package task12;
+package task20;
 
 /*
  Вспомни, что такое факториал.
