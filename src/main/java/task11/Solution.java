@@ -34,6 +34,5 @@ public class Solution {
         Panda panda  = new Panda();
         SpaceShip spaceShip  = new SpaceShip();
         StarDestroyer starDestroyer = new StarDestroyer();
-
-    }
+            }
 }
