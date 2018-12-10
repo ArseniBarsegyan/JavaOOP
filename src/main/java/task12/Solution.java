@@ -35,5 +35,13 @@ package task12;
  */
 public class Solution {
     public static void main(String[] args) {
-    }
+       Panda panda1 = new Panda(10,1);
+        Panda panda2 = new Panda(20,2);
+        Panda panda3 = new Panda(30,3);
+        Panda panda4 = new Panda(50,5);
+        Panda panda5 = new Panda(90,9);
+        Panda panda6 = new Panda(120,12);
+        Panda panda7 = new Panda(150,15);
+        System.out.println("Панды набираются мудрости с возрастом аки мы, люди, какие же они молодцы и славные зверушки!");
+        }
 }
