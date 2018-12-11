@@ -14,7 +14,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] numbers = {-5, 2, 4, 5, -10, 10, 0, 24};
 
-        int[] positiveNumbers = IntStream.of(numbers).filter(n -> n < 0).toArray();
+        int[] positiveNumbers = IntStream.of(numbers).filter(n -> n > 0).toArray();
         for (int i : positiveNumbers) {
             System.out.println(i);
         }

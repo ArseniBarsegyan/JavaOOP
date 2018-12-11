@@ -15,6 +15,10 @@ public class Solution {
     }
 
     private static long factorial(int number) {
-        return 1;
+        int subNumber = number;
+        for (int i = (number - 1); i > 1; i--) {
+            subNumber = subNumber * i;
+        }
+        return subNumber;
     }
 }

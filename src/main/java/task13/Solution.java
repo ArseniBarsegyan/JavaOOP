@@ -17,6 +17,13 @@ package task13;
  */
 public class Solution {
     public static void main(String[] args) {
+        Panda panda1 = new Panda(10);
+        Panda panda2 = new Panda(20);
+        Panda panda3 = new Panda(30);
+        Panda panda4 = new Panda(50);
+        Panda panda5 = new Panda(90);
+        Panda panda6 = new Panda(120);
+        Panda panda7 = new Panda(150);
     }
 }
 
